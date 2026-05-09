@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+  background: #C45824;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+body{
+  background: #E8D8B9;
+}
