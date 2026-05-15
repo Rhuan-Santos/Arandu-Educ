@@ -1,11 +1,171 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0fbff;
+    color: #000000;
+}
+
+/* IMAGENS */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cabecalho h1{
+     font-size: 100px;
+     position: relative;
+     right: -100px;
+}
+
+.persona{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #c05f10;
+
+    padding: 100px;
+    margin: 60px auto;
+    color: #ffebeb;
+    width: 100%;
+}
+
+.frase{
+    text-align: center;
+    font-size: 28px;
+    margin: 50px 20px 20px;
+    color: #0b3d91;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.foto-marielly{
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    background-color: #c05f10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+#quem_somos{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#marielly{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.cabecalho img{
+    width: 200px;
+    cursor: pointer;
+}
+
+/* TÍTULOS */
+h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+/* PARÁGRAFOS */
+p{
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* BOTÕES */
+button{
+    display: flex;
+    margin: 30px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0b3d91;
+    color: rgb(251, 253, 253);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #072b66;
+}
+
+/* HABILIDADES */
+.habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* CARDS */
+.card{
+    width: 220px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    padding: 0;
+}
+
+/* RODAPÉ */
+.rodape{
+    width: 100%;
+    background-color: #c05f10;
+    color: white;
+    margin: 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+/* REDES SOCIAIS */
+.rede{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.rede img{
+    width: 40px;
+}
+
 .cabecalho {
-  background: #C45824;
+    background: #C45824;
 }
 
 h1 {
@@ -13,6 +173,65 @@ h1 {
     font-family: Arial, sans-serif;
 }
 
-body{
-  background: #E8D8B9;
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cabecalho h1{
+        font-size: 45px;
+        right: 0;
+    }
+
+    .cabecalho img{
+        width: 120px;
+        margin-top: 15px;
+    }
+
+    .frase{
+        font-size: 20px;
+    }
+
+    .persona{
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .foto-marielly{
+        width: 220px;
+    }
+
+    #quem_somos,
+    #marielly{
+        font-size: 18px;
+    }
+
+    .habilidades{
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .rodape{
+        padding: 30px 20px;
+    }
+
+    .rede{
+        justify-content: center;
+    }
+
+    button{
+        width: 90%;
+        max-width: 300px;
+        justify-content: center;
+    }
 }
